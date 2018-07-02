@@ -2,12 +2,11 @@ from faker.providers import BaseProvider
 
 import json
 import random
+import sys
 
 NAUGHTY_LIST = []
-with open("blns.json") as naughties:
+with open("%s/blns.json" % sys.prefix) as naughties:
     NAUGHTY_LIST = json.load(naughties)
-
-fake = Faker()
 
 class NaughtyProvider(BaseProvider):
 
