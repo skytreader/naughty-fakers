@@ -5,6 +5,7 @@ setup(
     version="0.1.7",
     author="Chad Estioco",
     author_email="chadestioco@gmail.com",
+    url="https://github.com/skytreader/naughty-fakers",
     packages=["naughties"],
     data_files=[(".", ["blns.json"])],
     install_requires=["Faker==1.0.5"],
